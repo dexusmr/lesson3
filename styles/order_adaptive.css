@@ -16,11 +16,22 @@
         position: static;
         transform: none;
     }
+        .main {
+        left: 10px;
+        right: 10px;
+        top: 50%;
+        bottom: 12px;
+        width: auto;
+        max-width: none;
+    }
 }
 
 @media (max-width: 420px) {
     .header-title {
         display: none;
+    }
+    .main-sizes {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -32,19 +43,4 @@
 
 }
 
-@media (max-width: 767px) {
-    .main {
-        left: 10px;
-        right: 10px;
-        top: 50%;
-        bottom: 12px;
-        width: auto;
-        max-width: none;
-    }
-}
 
-@media (max-width: 420px) {
-    .main-sizes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
